@@ -1,0 +1,381 @@
+/* tns.css
+
+Tech-Noid Systems Master CSS file
+  -- overrides some default Foundation classes/styles
+*/
+
+/*	
+--------------------------------------------------
+				Main Styles
+-------------------------------------------------- 
+*/
+
+/* basic text formatting */
+body, footer {
+	background: url("../images/tns/bg_body.jpg") repeat top left;
+	text-align: center;
+	font-family: 'DroidSerifRegular', Georgia, serif;
+	color: #333;
+}
+
+h1, h2, h3, h4, h5, h6, nav a, .mobile-nav a {
+	font-family: 'BebasNeueRegular', arial, sans-serif;
+	font-smooth: always;
+	-webkit-font-smoothing: always;
+	text-shadow: 0px 1px 1px #FFF;
+	clear: both;
+}
+
+h1 {
+	color: #2a2a2a;
+	font-size: 22px;
+	margin-bottom: 15px;
+	padding-top: 10px;
+	text-transform: uppercase;
+}
+
+h2 {
+	color: #555;
+	font-size: 20px;
+	margin-bottom: 15px;
+	padding-top: 10px;
+	text-transform: uppercase;
+}
+
+h3 {
+	color: #555;
+	font-size: 18px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+h4 {
+	color: #555;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+h5 {
+	color: #555;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+p, li {
+	color: #444;
+	text-align: center;
+	font-size: 12px;
+	line-height: 21px;
+	margin-bottom: 20px;
+	font-family: 'DroidSerifRegular', Georgia, serif;
+}
+
+a {
+	color: #a32626;
+	text-decoration: none;
+	font-family: 'DroidSerifRegular', Georgia, serif;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+em {
+	font-family: 'DroidSerifItalic', Georgia, serif;
+}
+
+strong {
+	font-family: 'DroidSerifBold', Georgia, serif;
+}
+
+
+
+/* div formatting */
+div.blank {
+	padding: 50px 30px 2px 30px;
+	margin: 0 0 30px 0;
+}
+
+div.topbar {
+	padding: 10px 10px 2px 10px;
+	background: #efefef;
+	background: -moz-linear-gradient(top, #FFFFFF 0%, #F4F4F4 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#F4F4F4));
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#F4F4F4',GradientType=0 );
+	box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25); 
+	margin: 0 0 10px 0;
+}
+	
+div.spacer {
+	padding: 10px 10px 2px 10px;
+	margin: 0 0 10px 0;
+}
+	
+.logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/*	
+--------------------------------------------------
+				Site Login Bar
+-------------------------------------------------- 
+*/
+	
+#tnsBAR {
+	padding: 15px 20px 15px 20px; 
+  	background: #efefef;
+	background: -moz-linear-gradient(top, #FFFFFF 0%, #F4F4F4 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#F4F4F4));
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#F4F4F4',GradientType=0 );
+	box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25); 
+	margin: 0 0 10px 0;
+	height: 45px;
+}
+
+@media handheld, only screen and (max-width: 767px) {
+	#tnsBAR { padding: 15px 0px 13px 0px; }
+}
+
+#tnsBAR h1, #tnsBAR h2 {
+	margin-bottom: 0;
+	line-height: 1;
+	bottom: 4px; 
+}
+#tnsBAR h1 {
+  	color: black;
+  	font-size: 16px;
+  	font-size: 1.6rem;
+  	font-weight: bold; 
+}
+#tnsBAR h1 a { color: #fff; }
+#tnsBAR strong { 
+	display: block; 
+	margin: 0; 
+	padding: 0; 
+	height: 14px; 
+	line-height: 14px; 
+	position: relative; 
+	bottom: 4px; 
+}
+#tnsBAR strong a {
+  	line-height: 14px;
+  	color: #fff;
+  	font-weight: 500;
+  	padding-right: 12px;
+}
+#tnsBAR strong a.button { 
+	padding: 4px 10px; 
+	font-weight: bold; 
+}
+
+#tnsBAR a.button, #tnsBAR input.button {
+	font-family:  'BebasNeueRegular', arial, sans-serif;
+	font-size: 16px;
+	background: url("../images/tns/bg_blocks.png") repeat top left;
+	text-shadow: 0px 1px 0px #000;
+}
+#tnsBAR a.button:hover, #tnsBAR input.button:hover {
+	color: #e34c37;
+	text-decoration: none;
+}
+#tnsBAR a.button:active, #tnsBAR input.button:active {
+	color: #e34c37;
+	top: 1px;
+	position: relative;
+	text-shadow: 0px 0px 0px #000;
+}
+
+/*	
+--------------------------------------------------
+				Navigation Bar
+-------------------------------------------------- 
+*/
+
+nav {
+	height: 45px; 
+	width: 100%;
+	margin: 0;
+	padding: 10px 0 0 0;
+	list-style: none;
+	background: url("../images/tns/bg_blocks.png") repeat top left;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	-moz-box-shadow: 0 2px 1px #9c9c9c;
+	-webkit-box-shadow: 0 2px 1px #9c9c9c;
+	box-shadow: 0 2px 1px #9c9c9c;
+}
+nav ul {
+	float: left;
+}
+nav ul li {
+	background: none;
+	float: left;
+	height: 40px;
+	line-height: 41px;
+	margin-left: 20px;
+	padding: 0;
+}
+nav ul li.spacer {
+	padding-right: 15px;
+	background: url("../images/tns/spacer.png") center no-repeat;
+}
+nav ul li a {
+	color: #F0F0F0;
+	font-size: 22px;
+	text-transform: uppercase;
+	text-shadow: 0px 2px 0px #000;
+}
+nav ul li a.active {
+	color: #e34c37;
+	text-decoration: none;
+}
+nav ul li a:hover {
+	color: #e34c37;
+	text-decoration: none;
+}
+nav ul li a:active {
+	top: 1px;
+	position: relative;
+	text-shadow: 0px 0px 0px #000;
+}
+
+/*	
+--------------------------------------------------
+			    Mobile Navigation
+-------------------------------------------------- 
+*/
+
+.mobile-nav li {
+	height: 30px;
+	width: 100%;
+	background: url("../images/tns/bg_blocks.png") repeat top left;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	-moz-box-shadow: 0 2px 1px #9c9c9c;
+	-webkit-box-shadow: 0 2px 1px #9c9c9c;
+	box-shadow: 0 2px 1px #9c9c9c;
+}
+.mobile-nav li:active {
+	-moz-box-shadow: 0 0px 0px #000;
+	-webkit-box-shadow: 0 0px 0px #000;
+	box-shadow: 0 0px 0px #000;
+	top: 1px;
+	position: relative;
+}
+.mobile-nav li a {
+	color: #F0F0F0;
+	font-size: 22px;
+	text-transform: uppercase;
+	text-shadow: 0px 2px 0px #000;
+}
+.mobile-nav li a:hover {
+	color: #e34c37;
+	text-decoration: none;
+}
+.mobile-nav li a:active {
+	top: 1px;
+	position: relative;
+	text-shadow: 0px 0px 0px #000;
+}
+.mobile-nav li a.active {
+	color: #e34c37;
+	text-decoration: none;
+}
+
+
+/*	
+--------------------------------------------------
+				Content Navigation
+-------------------------------------------------- 
+*/
+
+.nav-content-select {
+	
+}
+
+.nav-content {
+	
+}
+
+
+
+
+
+/*	
+--------------------------------------------------
+				Stalking Buttons
+-------------------------------------------------- 
+*/
+
+ul.stalking {
+	margin-left: -15px;
+}
+ul.stalking li a{
+	margin: 0 15px 18px 0;
+	text-indent: -9999px;
+	height: 72px;
+	width: 72px;
+	float: left;
+}
+ul.stalking li.twitter a{
+	background: url("../images/tns/twitter.png") top center no-repeat;
+}
+ul.stalking li.twitter:hover a{
+	background: url("../images/tns/twitter.png") bottom center no-repeat;
+}
+
+ul.stalking li.facebook a{
+	background: url("../images/tns/facebook.png") top center no-repeat;
+}
+ul.stalking li.facebook:hover a{
+	background: url("../images/tns/facebook.png") bottom center no-repeat;
+}
+
+ul.stalking li.gplus a{
+	background: url("../images/tns/google.png") top center no-repeat;
+}
+ul.stalking li.gplus:hover a{
+	background: url("../images/tns/google.png") bottom center no-repeat;
+}
+
+
+
+
+/*    --------------------------------------------------
+    Tabs
+    -------------------------------------------------- */
+    dl.tabs { display: block; margin: 0 0 20px 0; padding: 0; height: 30px; border-bottom: solid 1px #ddd; }
+    dl.tabs dt { display: block; width: auto; height: 30px; padding: 0 9px 0 20px; line-height: 30px; float: left; color: #999; font-size: 11px; text-transform: uppercase; cursor: default; }
+    dl.tabs dt:first-child { padding: 0 9px 0 0; }
+    dl.tabs dd { display: block; width: auto; height: 30px; padding: 0; float: left; }
+    dl.tabs dd a { display: block; width: auto; height: 29px; padding: 0 9px; line-height: 30px; border: solid 1px #ddd; margin: 0 -1px 0 0; color: #555; background: #eee; }
+    dl.tabs dd a.active { background: #fff; border-width: 1px 1px 0 1px; height: 30px; }
+
+		.nice.tabs { border-bottom: solid 1px #eee; margin: 0 0 30px 0; height:43px; }
+		.nice.tabs dd a { padding: 7px 18px 9px; font-size: 15px; font-size: 1.5rem; color: #555555; background: none; border: none; }
+		.nice.tabs dd a.active { font-weight: bold; color: #333; background: #fff; border-left: 1px solid #eee; border-right: 1px solid #eee; border-top: 3px solid #00a6fc; margin: 0 10px; position: relative; top: -5px; }
+		.nice.tabs dd:first-child a.active { margin-left: 0; }
+		
+
+    
+    ul.tabs-content { margin: 0; display: block; }
+    ul.tabs-content>li { display:none; }
+    ul.tabs-content>li.active { display: block; }
+    
+    dl.contained, dl.nice.contained { margin-bottom: 0; }
+    dl.contained.tabs dd a { padding: 0 14px; }
+    dl.nice.contained.tabs dd a { padding: 7px 18px 9px; }
+
+    ul.contained.tabs-content { padding: 0; }
+	ul.contained.tabs-content>li { padding: 20px; border: solid 0 #ddd; border-width: 0 1px 1px 1px; }
+	ul.nice.contained.tabs-content>li { border-color: #eee; }
+
+
+
